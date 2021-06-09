@@ -76,7 +76,7 @@ workflows:
       - build-client-python:
           <<: *only-on-release
       - release-client-python:
-          <<: *only-on-release
+#          <<: *only-on-release
           context: release
           requires:
             - build-client-python
